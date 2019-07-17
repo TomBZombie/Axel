@@ -116,7 +116,7 @@ A drop-in replacement for composer's autoloader. It's faster and allows you to u
 Just load the module and tell Axel the path to the directory containing your `composer.json`. This will recursively load all vendor `composer.json` files and register them with the autoloader.
 
 ```php
-$axel =  $axel->addModule(\Axel\Module\Composer($axel, './project'));
+$axel =  $axel->addModule(new \Axel\Module\Composer($axel, './project'));
 
 ```
 
